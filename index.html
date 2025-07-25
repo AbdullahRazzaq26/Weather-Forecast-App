@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="weather.png" type="image/x-icon">
+</head>
+
+<body id="body">
+    <div class="container">
+
+        <div class="city-input-wrapper">
+            <input type="text" id="city" placeholder="Enter city name..." autocomplete="off" />
+            <ul id="suggestions" class="suggestion-box"></ul>
+        </div>
+
+
+        <button id="getBtn">Get Temperature</button>
+
+    <div class="weather-output">
+            <div id="icon">
+                <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
+            <div id="details" class="weather-details"></div>
+        </div>
+    </div>
+
+    <div id="forecast" class="forecast-container"></div>
+
+    <script src="cities.js"></script>
+    <script src="app.js"></script>
+</body>
+
+
+</html>
